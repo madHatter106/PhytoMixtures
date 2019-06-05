@@ -1,0 +1,13 @@
+digraph {
+	subgraph cluster4 {
+		"α" [label="α ~ Dirichlet"]
+		label=4 labeljust=r labelloc=b style=rounded
+	}
+	"σ" [label="σ ~ Exponential"]
+	subgraph cluster93 {
+		likelihood [label="likelihood ~ Normal" style=filled]
+		label=93 labeljust=r labelloc=b style=rounded
+	}
+	"σ" -> likelihood
+	"α" -> likelihood
+}

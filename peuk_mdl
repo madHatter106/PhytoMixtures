@@ -1,0 +1,10 @@
+digraph {
+	"ℓ" [label="ℓ ~ Gamma"]
+	"ϵ" [label="ϵ ~ HalfNormal"]
+	subgraph cluster10 {
+		y_pred [label="y_pred ~ MvNormal" style=filled]
+		label=10 labeljust=r labelloc=b style=rounded
+	}
+	"ℓ" -> y_pred
+	"ϵ" -> y_pred
+}
